@@ -1,0 +1,88 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url('https://wallpapercave.com/wp/wp2790241.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+  }
+
+  #alura-dev {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 10px;      
+  }
+
+  img {
+      width: 300px;
+      background-color: rgba(0, 0, 0);
+  }
+
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(209, 209, 209);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(230, 230, 230);
+  }
+  
+  #clear {
+    background-color: #fcc0c0;
+  }
+  
+  #clear:hover {
+    background-color: #fc7979;
+  }
+  
+  #equal {
+    background-color: #5d99b3;
+  }
+  
+  #equal:hover{
+    background-color: #0271ad;
+  }
+  
+  .span-two {  
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around; 
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;  
+  }
+  
+  .output .previous-operand {
+    color: rgba(56, 209, 0, .65);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: #38d100;
+    font-size: 2.5rem;
+  }
