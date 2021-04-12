@@ -5,4 +5,4 @@ Calculadora criada utilizando **Javascript**, **HTML** e **CSS** na aula 02 da I
 A calculator created using **Javascript**, **HTML** and **CSS** in class 02 of ImersãoDev from [Alura.](http://www.alura.com.br)
 
 
-![Screenshot](calculator.jpg)
+![Screenshot](Calculator.jpg)
